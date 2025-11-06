@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.2rem;
+            background-color: #fafafa;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: aqua;"><U>Registration application</U></h1><br>
+    <form action="/submit" method="post">
+        <label for=" full name" style="color: rgb(163, 223, 133);">Full Name</label>
+        <input type="text" id=" full name" name=" full name" required placeholder="Enter your Full Name"
+            style="width: 100%; padding: 8px; margin: 4px 0;"><br><br>
+        <label for="roll number" style="color: rgb(182, 155, 123);">Roll Number</label>
+        <input type="number or text" id="roll number" name="roll number" required placeholder="Enter your Roll No"
+            style="width: 100%; padding: 8px; margin: 4px 0;"><br><br>
+        <label for=" department" style="color: rgb(79, 116, 196);">Department</label> <select id="subject"
+            name="subject" style="width: 100%; padding: 8px; margin: 5px 0;">
+            <option value="">Select a department</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="MECH">MECH</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="EEE">EEE</option>
+        </select>
+        <br><br>
+
+        <label for="year of study" style="color: rgb(90, 67, 126);">Year of Study</label>
+
+        <input type="radio" id="1st" name="year of study" value="1st" checked>
+        <label for="1st">1st Year</label>
+
+        <input type="radio" id="2nd" name="year of study" value="2nd">
+        <label for="2nd">2nd Year</label>
+
+        <input type="radio" id="3rd" name="year of study" value="3rd">
+        <label for="3rd">3rd Year</label>
+
+        <input type="radio" id="4th" name="year of study" value="4th">
+        <label for="4th">4th Year</label>
+        <br><br><label for="courses" style="color: rgb(162, 66, 82);">Courses</label>
+
+        <input type="checkbox" id="html" name="courses" value="HTML" checked>
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="courses" value="CSS">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="javascript" name="courses" value="JAVASCRIPT">
+        <label for="javascript">JAVASCRIPT</label>
+
+        <input type="checkbox" id="python" name="courses" value="PYTHON">
+        <label for="python">PYTHON</label>
+        <br><br>
+
+        <label for="email" style="color: rgb(43, 127, 99);">Email</label>
+        <input type="text" id="email" name="email" required placeholder="Enter your Email"
+            style="width: 100%; padding: 8px; margin: 4px 0;">
+        <br><br>
+
+        <label for="photo" style="color: rgb(48, 154, 9);">Upload Photo:</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*" style="margin: 4px 0;">
+        <br><br>
+
+
+        <button type="submit"
+            style="background-color: #4CAF50; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">submit</button>
+        <button type="reset"
+            style="background-color: #f44336; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-left: 10px;">Reset
+            Form</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+
+
+
+</html>
