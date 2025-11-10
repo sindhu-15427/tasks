@@ -9,48 +9,93 @@
 
 <body style="font-family: Georgia, 'Times New Roman', Times, serif;">
     <header style="background-color: #80aab5; color: white; padding: 20px; text-align: center;">
-        <h1>HTML Tutorial Series</h1>
+        <h1 style="color: rgb(18, 44, 187);">HTML Tutorial Series</h1>
         <nav>
-            <a href="index.html" style="color: rgb(30, 3, 3); text-decoration: none;  margin: 10px;">Home</a>
-            <a href="day5.1.html" style="color: rgb(30, 3, 3); text-decoration: none;  margin: 10px;">Structure</a>
-            <a href="day5.2.html" style="color: rgb(30, 3, 3); text-decoration: none; margin: 10px;">Lists</a>
-            <a href="day5.3.html" style="color: rgb(30, 3, 3); text-decoration: none; margin: 10px;">Text Formatting</a>
-            <a href="day5.4.html" style="color: rgb(30, 3, 3); text-decoration: none; margin: 10px;">Audios and
+            <a href="index.html" style="color: rgb(122, 6, 6); text-decoration: none; margin: 10px;">Home</a>
+            <a href="day5.1.html" style="color: rgb(122, 6, 6); text-decoration: none;  margin: 10px;">Structure</a>
+            <a href="day5.2.html" style="color: rgb(122, 6, 6);text-decoration: none; margin: 10px;">Lists</a>
+            <a href="day5.3.html" style="color: rgb(122, 6, 6);text-decoration: none; margin: 10px;">Text Formatting</a>
+            <a href="day5.4.html" style="color: rgb(122, 6, 6) ;text-decoration: none; margin: 10px;">Audios and
                 video</a>
-            <a href="day5.html" style="color: rgb(30, 3, 3); text-decoration: none; margin: 10px;">Tables</a>
-            <a href="day5.6.html" style="color: rgb(30, 3, 3);text-decoration: none; margin: 10px;">Forms</a>
+            <a href="day5.html" style="color: rgb(122, 6, 6); text-decoration: none; margin: 10px;">Tables</a>
+            <a href="day5.6.html" style="color:rgb(122, 6, 6);text-decoration: none;margin: 10px;">Forms</a>
+
+
+
         </nav>
     </header>
-    
+    <img src="forms.html" alt="Forms Image" width="400" height="350" style="float: right; margin: 100px;">
+
     <hr>
-    <ol type="1" style="font-weight: 400;">
+    <p style="color: red;">
+        Forms allow users to interact with your website.
+        They are used to collect data such as names, emails, feedback, or orders.
+    </p>
 
-        <li>HTML Structure</li>
-        <li>HTML Lists</li>
-        <li>HTML Text Formatting</li>
-        <li>HTML Audios and Video</li>
-        <li>HTML Tables</li>
-        <li>HTML Forms</li>
+    <h2 style="color: rgb(52, 231, 231);">Important Form Elements:</h2>
+    <ul style="color: rgb(143, 7, 116);">
+        <li><b>form:</b> — The container for input elements.</li>
+        <li><b>input:</b> — Used for text boxes, radio buttons, and checkboxes.</li>
+        <li><b>textarea:</b> — Allows users to type longer text or comments.</li>
+        <li><b>select:</b> — Creates a drop-down list.</li>
+        <li><b>button:</b> — Submits the form data.</li>
+    </ul>
 
-    </ol>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <h2 style="color: rgb(105, 209, 103);">Example Form:</h2>
+
+    <form style="color: rgb(211, 104, 217);">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female<br><br>
+
+        <label for="course">Select Course:</label><br>
+        <select id="course" name="course">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+        </select><br><br>
+
+        <label for="message">Feedback:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+        <button style="background-color: green;" type="submit">Submit</button>
+        <button style="background-color: red;" type="reset">Reset</button>
+    </form>
+
+    <h2 style="color: rgb(182, 240, 21);">Example Uses:</h2>
+    <ul>
+        <li style="color: rgb(176, 19, 98);">Contact or feedback forms.</li>
+        <li style="color: rgb(176, 19, 98);">Registration forms for courses or events.</li>
+        <li style="color: rgb(176, 19, 98);">Online order or booking forms.</li>
+    </ul>
+
+    <p style="color: rgb(228, 228, 15);">
+        Forms are essential for creating interactive and user-friendly web applications.
+    </p>
+
+    <hr>
+    <p style="text-align: center;">
+        <a href="day5.5.html">← Previous Page</a> |
+        <a href="day5.6.html">Next Page →</a>
+    </p>
 
 
-    <footer style="text-align: center; padding: 20px; background-color:#80aab5; padding: 10px; position: relative;">
+
+
+    <footer
+        style="text-align: center;padding: 20px;background-color:#80aab5;color:rgb(27, 27, 144); position: relative;">
+
         <p>
             &copy; 2025 HTML Tutorials Series. All rights reserved.
         </p>
         <p>Designed by KOPPISETTI SINDHU.</p>
     </footer>
-
 </body>
 
 </html>
