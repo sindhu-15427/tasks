@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+}
+
+.hero {
+    background-color: #1a4b91;
+    color: #fff;
+    align-items: center;
+    position: relative;
+    min-height: 85vh;
+    padding: 40px;
+    width: 60%;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 40px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 20%;
+    clip-path: polygon(0 100%, 0 50%, 100% 0, 100% 100%);
+    background-color: white;
+    transform-origin: bottom left;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links a {
+    color: #eee;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.login {
+    color: aliceblue;
+
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+
+.join-button {
+    background-color: #667eea;
+    color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+
+    font-weight: bold;
+
+}
+
+.join-button:hover {
+    background-color: #8750be;
+}
+
+.welcome {
+
+    font-weight: bold;
+
+    opacity: 0.8;
+}
+
+.hero-content {
+    justify-content: center;
+    text-align: center;
+    line-height: 1.6;
+
+}
+
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.subtext {
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+    line-height: 1.5rem;
+    opacity: 0.9;
+}
+
+.hero-button {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    font-weight: bold;
+
+}
+
+.button.primary {
+    background-color: #4e63c2;
+    color: white;
+
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: #eee;
+    border: 2px solid blue;
+}
+
+.button.secondary:hover {
+    background-color: #1431b4;
+    color: #4e63c2;
+
+}
