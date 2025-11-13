@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to CSS</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #629cac;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      background-color: white;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 900px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      color: #4aa3a2;
+      border-bottom: 2px solid #629cac;
+      padding-bottom: 5px;
+    }
+    
+   .color-box {
+      width: 150px;
+      height: 50px;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 5px;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .hex {
+      background-color: #0000ff;
+    }
+
+    .rgb {
+      background-color: rgb(0, 200, 0);
+    }
+
+
+    .background-box {
+      background-image: linear-gradient(to right, #ffcc00, #ff9966);
+      padding: 20px;
+      border-radius: 10px;
+      color: #333;
+      font-weight: bold;
+      text-align: center;
+    }
+   .border-example {
+      border: 4px dotted #4aa3a2;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .selector-demo {
+      background-color: #eefafa;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+  
+    .descendant p {
+      color: rgb(20, 156, 49);
+    }
+
+    
+    .child > p {
+      color: blue;
+    }
+
+  
+    h3 + p {
+      color: rgb(209, 209, 14);
+      font-style: italic;
+    }
+
+    
+    input[type="text"] {
+      border: 2px solid #4aa3a2;
+      padding: 5px;
+      border-radius: 5px;
+      width: 50%;
+      padding: 10px;
+     margin-bottom: 10px;
+    }
+    
+    a:hover {
+      color: orange;
+    }
+
+ .highlight {
+  background-color: yellow;    
+  color: black;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+
+    
+    ::selection {
+      background-color: yellow;
+      color: black;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .button {
+      background-color: #b2c717;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #3a8281;
+    }
+
+    footer {
+      background-color: #4aa3a2;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Introduction to CSS</h1>
+    <nav>
+      <a href="#introduction"> CSS Introduction</a>
+      <a href="#syntax">Syntax</a>
+      <a href="#selectors">Selectors</a>
+      <a href="#colors">Colors</a>
+      <a href="#backgrounds">Backgrounds</a>
+      <a href="#borders">Borders</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>What is CSS?</h2>
+      <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written
+        in HTML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+      <P>CSS is one of the core technologies of the World Wide Web, alongside HTML and JavaScript. It controls the
+        visual appearance of web pages, including colors, fonts, layouts, and responsive behaviors.</P>
+    </section>
+
+    <section id="syntax">
+      <h2>CSS Syntax</h2>
+      <p>A CSS rule consists of a selector and a declaration block:</p>
+      <P>Syntax:</P>
+      selector { property: value; property: value; }
+
+      <p>Example:</p>
+
+      p {
+      color: blue;
+      font-size: 18px;
+      }
+
+    </section>
+
+    <section id="selectors">
+      <h2>CSS Selectors</h2>
+      <ul>
+        <li><b>Element Selector</b> — Select elements based on their tag name. </li>
+        <li><b>Class Selector</b> — Select elements based on their class attributes.</li>
+        <li><b>ID Selector</b> — Select elements based on their id attributes.</li>
+        <li><b>Universal Selector</b> — Select all elements(*) in the document.</li>
+         <li><b>Highlight Selector (::selection)</b> — changes color when text is selected</li>
+        <li><b>Descendant Selector</b> — Selects element that are descendants of another element(space between selectors).</li>
+        <li><b>Child Selector</b> — Selects elements that are direct children of another element(use > symbol).</li>
+        <li><b>Adjacent Sibling Selector</b> —Selects an element that is directly after another specific element(use + symbol). </li>
+        <li><b>Attribute Selector</b> — Selects elements with a specific attribute.</li>
+        <li><b>Pseudo-Class Selector</b> — Selects elements when you hover over them.</li>
+      </ul>
+
+      <div class="selector-descendant">
+        <h3>Descendant Selector Example:</h3>
+        <div>
+          <p>This paragraph is inside a div (blue text).</p>
+        </div>
+      </div>
+       <div class="selector-child">
+        <h3>Child Selector Example:</h3>
+        <p>This paragraph is a direct child (blue text).</p>
+        <div><p>This one is nested and not a direct child (default color).</p></div>
+      </div>
+
+      <div class="selector-adjacent sibling">
+        <h3>Adjacent Sibling Selector Example:</h3>
+        <p>This text changes style because it follows an h3.</p>
+      </div>
+
+      <div class="selector-attribute">
+        <h3>Attribute Selector Example:</h3>
+        <input type="text" placeholder="Type here...">
+      </div>
+
+      <div class="selector-pseudo">
+        <h3>Pseudo-Class Selector Example:</h3>
+        <a href="#">Tap this given text for hover.</a>
+      </div>
+      <div class="selector-highlight">
+        <h3>Highlight Selector Example:</h3>
+        <p>This is a <span class="highlight">very important</span> point.</p>
+      </div>
+    </section>
+    <section id="colors">
+      <h2>CSS Colors</h2>
+      <div class="color-box red">Red</div>
+      <div class="color-box hex">Blue</div>
+      <div class="color-box rgb">Green</div>
+    </section>
+
+    <section id="backgrounds">
+      <h2>CSS Backgrounds</h2>
+      <div class="background-box">This box has a gradient background.</div>
+    </section>
+
+    <section id="borders">
+      <h2>CSS Borders</h2>
+      <div class="border-example">This box has a dotted border.</div>
+    </section>
+
+    <div class="nav-buttons">
+      <a href="previous.html" class="button">← Previous</a>
+      <a href="next.html" class="button">Next →</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CSS Learning Page. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
