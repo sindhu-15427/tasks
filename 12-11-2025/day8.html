@@ -8,21 +8,21 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Georgia, 'Times New Roman', Times, serif;
       background-color: #f3f3f3;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #629cac;
-      color: white;
+      background-color: #86ccdf;
+      color: rgb(136, 15, 15);
       text-align: center;
       padding: 20px;
     }
 
     nav a {
-      color: white;
+      color: rgb(123, 19, 152);
       text-decoration: none;
       margin: 10px;
       font-weight: bold;
@@ -43,12 +43,13 @@
     }
 
     h2 {
-      color: #4aa3a2;
+      color: #2512b4;
       border-bottom: 2px solid #629cac;
       padding-bottom: 5px;
+      background-color: #bc5788;
     }
-    
-   .color-box {
+
+    .color-box {
       width: 150px;
       height: 50px;
       color: white;
@@ -80,62 +81,63 @@
       font-weight: bold;
       text-align: center;
     }
-   .border-example {
+
+    .border-example {
       border: 4px dotted #4aa3a2;
       padding: 20px;
       border-radius: 10px;
       text-align: center;
     }
+
     .selector-demo {
-      background-color: #eefafa;
+      background-color: rgb(233, 226, 226);
       padding: 15px;
       border-radius: 10px;
       margin: 15px 0;
     }
 
-  
     .descendant p {
-      color: rgb(20, 156, 49);
-    }
-
-    
-    .child > p {
-      color: blue;
-    }
-
-  
-    h3 + p {
-      color: rgb(209, 209, 14);
+      color: green;
       font-style: italic;
     }
 
-    
+
+    .child>p {
+      color: blue;
+      font-weight: bold;
+    }
+
+
+    h3+p {
+      color: rgb(14, 209, 89);
+      font-style: italic;
+    }
+
+
     input[type="text"] {
       border: 2px solid #4aa3a2;
       padding: 5px;
       border-radius: 5px;
       width: 50%;
       padding: 10px;
-     margin-bottom: 10px;
+      margin-bottom: 10px;
     }
-    
+
     a:hover {
       color: orange;
     }
 
- .highlight {
-  background-color: yellow;    
-  color: black;
-  font-weight: bold;
-  padding: 2px 4px;
-  border-radius: 3px;
-}
-
-
-    
-    ::selection {
+    .highlight {
       background-color: yellow;
       color: black;
+      font-weight: bold;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+
+    ::selection {
+      background-color: yellow;
+      color: rgb(78, 54, 144);
     }
 
     .nav-buttons {
@@ -213,10 +215,12 @@
         <li><b>Class Selector</b> — Select elements based on their class attributes.</li>
         <li><b>ID Selector</b> — Select elements based on their id attributes.</li>
         <li><b>Universal Selector</b> — Select all elements(*) in the document.</li>
-         <li><b>Highlight Selector (::selection)</b> — changes color when text is selected</li>
-        <li><b>Descendant Selector</b> — Selects element that are descendants of another element(space between selectors).</li>
+        <li><b>Highlight Selector (::selection)</b> — changes color when text is selected</li>
+        <li><b>Descendant Selector</b> — Selects element that are descendants of another element(space between
+          selectors).</li>
         <li><b>Child Selector</b> — Selects elements that are direct children of another element(use > symbol).</li>
-        <li><b>Adjacent Sibling Selector</b> —Selects an element that is directly after another specific element(use + symbol). </li>
+        <li><b>Adjacent Sibling Selector</b> —Selects an element that is directly after another specific element(use +
+          symbol). </li>
         <li><b>Attribute Selector</b> — Selects elements with a specific attribute.</li>
         <li><b>Pseudo-Class Selector</b> — Selects elements when you hover over them.</li>
       </ul>
@@ -224,13 +228,15 @@
       <div class="selector-descendant">
         <h3>Descendant Selector Example:</h3>
         <div>
-          <p>This paragraph is inside a div (blue text).</p>
+          <p>This paragraph is inside a (green text).</p>
         </div>
       </div>
-       <div class="selector-child">
+      <div class="selector-child">
         <h3>Child Selector Example:</h3>
-        <p>This paragraph is a direct child (blue text).</p>
-        <div><p>This one is nested and not a direct child (default color).</p></div>
+        <p>This paragraph is a direct child (green text).</p>
+        <div>
+          <p>This one is nested and not a direct child (default color).</p>
+        </div>
       </div>
 
       <div class="selector-adjacent sibling">
