@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Tables</title>
+
+<style>
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    
+    body {
+        background: linear-gradient(to bottom, #f7d1d3, #c8b2d9);
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .header {
+        padding: 40px;
+        background: #ffffffa1;
+        width: 100%;
+        margin: 30px auto;
+        border: 3px solid #4b2c5e;
+        border-radius: 10px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+        color: #4b2c5e;
+    }
+
+    .header p {
+        font-size: 18px;
+        margin-top: 10px;
+        color: #222;
+    }
+
+
+    
+    .flex-box {
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    
+    .container {
+        background: #fff;
+        width: 45%;
+        min-width: 300px;
+        padding: 25px;
+        border-radius: 12px;
+        border: 2px solid #4b2c5e;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        text-align: left;
+    }
+
+    .container h2 {
+        text-align: center;
+        color: #4b2c5e;
+        margin-bottom: 20px;
+    }
+
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+    table, th, td {
+        border: 2px solid #4b2c5e;
+    }
+
+    th {
+        background: #4b2c5e;
+        color: white;
+        padding: 10px;
+    }
+
+    td {
+        padding: 10px;
+        background: #ffffffa1;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding: 20px;
+        background: #4b2c5e;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+
+    
+    <div class="header">
+        <h1>HTML Tables</h1>
+        <p>HTML tables allow web developers to arrange data into rows and columns.
+
+</p>
+    </div>
+
+    
+    <div class="flex-box">
+
+        
+        <div class="container">
+            <h2>Table Explanation</h2>
+            <p><b>table:</b> – Creates a table</p>
+            <p><b>tr:</b> – Table row</p>
+            <p><b>th:</b> – Table heading (bold + centered)</p>
+            <p><b>td:</b> – Table data/cell</p>
+
+            <p style="margin-top:15px;">
+                Tables are used to display data in rows and columns.  
+            </p>
+        </div>
+
+        
+        <div class="container">
+            <h2>Table Example</h2>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                </tr>
+
+                <tr>
+                    <td>Ravi</td>
+                    <td>10</td>
+                    <td>89</td>
+                </tr>
+
+                <tr>
+                    <td>Deepa</td>
+                    <td>9</td>
+                    <td>92</td>
+                </tr>
+
+                <tr>
+                    <td>Arjun</td>
+                    <td>10</td>
+                    <td>95</td>
+                </tr>
+            </table>
+        </div>
+
+    </div><br>
+
+    <br>
+
+    <footer>
+        <p>© Tutorials, 2025</p><br>
+        <p>Designed By Koppisetti Sindhu.</p>
+    </footer>
+
+</body>
+</html>

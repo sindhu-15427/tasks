@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f0ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #5a189a;
+        }
+
+
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+
+        .box {
+            flex: 1;
+            background: #ffffff;
+            border: 3px solid #9d4edd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #7b2cbf;
+            border-bottom: 2px solid #c77dff;
+            padding-bottom: 5px;
+        }
+
+
+
+        .flex-example {
+            display: flex;
+            gap: 8px;
+            padding: 10px;
+            background: #e9d4ff;
+            border-radius: 8px;
+            border: 2px solid #c77dff;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            background: #9d4edd;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Flexbox</h1>
+
+    <div class="flex-container">
+
+
+        <div class="box">
+            <h2>What is Flexbox?</h2>
+
+            <p>
+                Flexbox is a layout model in CSS that allows items inside a container
+                to be automatically arranged based on available space.
+            </p>
+
+            <h3 style="color:#5a189a;">Important Flexbox Properties:</h3>
+
+            <ul>
+                <li><b>align-self</b>-Specifies the alignment for a flex item (overrides the flex container's
+                    align-items property)</li>
+                <li><b>flex</b>-A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties</li>
+                <li><b>flex-basis</b>-Specifies the initial length of a flex item</li>
+                <li><b>flex-grow</b>-Specifies how much a flex item will grow relative to the rest of the flex items
+                    inside the container</li>
+                <li><b>flex-shrink</b>- Specifies how much a flex item will shrink relative to the rest of the flex
+                    items inside the container</li>
+                <li><b>order</b>- Specifies the order of the flex items inside the container</li>
+
+            </ul>
+        </div>
+
+
+        <div class="box">
+            <h2>Flexbox Examples</h2>
+
+            <h3 style="color:#825ea7;">1. Row Layout</h3>
+            <div class="flex-example" style="flex-direction: row;">
+                <div class="item">Box 1</div>
+                <div class="item">Box 2</div>
+                <div class="item">Box 3</div>
+            </div>
+
+            <h3 style="color:#825ea7;">2. Column Layout</h3>
+            <div class="flex-example" style="flex-direction: column;">
+                <div class="item">Column 1</div>
+                <div class="item">Column 2</div>
+                <div class="item">Column 3</div>
+            </div>
+
+            <h3 style="color:#825ea7;">3. Center Items</h3>
+            <div class="flex-example" style="justify-content:center; align-items:center;">
+                <div class="item">Centered</div>
+                <div class="item">Items</div>
+            </div>
+
+        </div>
+
+       
+</body>
+
+</html>

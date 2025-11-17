@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Audio & Video</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+
+        body {
+            background: linear-gradient(to bottom, #f7d1d3, #c8b2d9);
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+
+        .header {
+            padding: 40px;
+            background: #ffffffa1;
+            width: 100%;
+            margin: 30px auto;
+            border: 3px solid #4b2c5e;
+            border-radius: 10px;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            color: #4b2c5e;
+        }
+
+        .header p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #222;
+        }
+
+
+        .container {
+            width: 100%;
+            margin: 25px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #4b2c5e;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+
+        .container h2 {
+            color: #4b2c5e;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+
+        .example-box {
+            background: #ffffffa1;
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px dotted #4b2c5e;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .example-box h3 {
+            text-align: center;
+            color: #4b2c5e;
+            margin-bottom: 15px;
+        }
+
+
+        audio,
+        video {
+            width: 80%;
+            margin-top: 15px;
+            border: 2px solid #4b2c5e;
+            border-radius: 10px;
+            background: #fff;
+            padding: 10px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #4b2c5e;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <h1>HTML Audio & Video</h1>
+        <p>Examples of inserting audio and video in a webpage</p>
+    </div>
+
+
+    <div class="container">
+        <h2>Adding Audios and Videos in HTML</h2>
+        <p>
+            HTML allows you to add multimedia elements like audio and video directly into a webpage.
+            This makes your content more engaging and interactive.
+        </p>
+
+        <h2 >Important Tags</h2>
+        <ul>
+            <li><b>audio:</b> — Used to embed sound files like music or narration.</li>
+            <li><b>video:</b> — Used to display video clips.</li>
+            <li><b>source:</b> — Defines the file source inside audio or video tags.</li>
+            <li><b>controls:</b> — Attribute that adds play, pause, and volume options.
+            </li>
+        </ul>
+        </div>
+        <div class="example-box">
+            <h3>Example Media Player</h3>
+
+            <p><b>Sample Audio Player</b></p>
+            <audio controls>
+                <source src="Har Har Mahadev Shambhu - Sachet Parampara.mp3" type="audio/mpeg">
+            </audio>
+
+            <p style="margin-top:20px;"><b>Sample Video Player</b></p>
+            <video controls>
+                <source src="lord shiva.mp4" type="video/mp4">
+            </video>
+        </div>
+        </div>
+
+        <footer>
+            <p>© Tutorials, 2025</p><br>
+            <p>Designed By Koppisetti Sindhu.</p>
+        </footer>
+
+</body>
+
+</html>

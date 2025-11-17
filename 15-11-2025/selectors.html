@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:#f8f0ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #5a189a;
+           
+        }
+
+
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+
+        .box {
+            flex: 1;
+            background: #ffffff;
+            border: 3px solid #9d4edd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #7b2cbf;
+            border-bottom: 2px solid #c77dff;
+            padding-bottom: 5px;
+        }
+
+
+
+
+        p {
+            color: #5a189a;
+        }
+
+
+        .highlight {
+            background: #e0b3ff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+
+        #special {
+            color: #d100d1;
+            font-weight: bold;
+        }
+
+
+        h3,
+        h4 {
+            color: #7b2cbf;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        input[type="text"] {
+            border: 2px solid #c77dff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+         footer {
+            margin-top: 20px;
+            background: #8c69b0;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selectors</h1>
+
+    <div class="flex-container">
+
+
+        <div class="box">
+            <h2>Explanation of Selectors</h2>
+
+            <ul>
+                <li><b>Element Selector</b> – selects elements by name (p, h1, div)</li>
+                <li><b>Class Selector (.)</b> – selects elements with class name</li>
+                <li><b>ID Selector (#)</b> – selects an element with a unique ID</li>
+                <li><b>Group Selector (,)</b> – applies same style to multiple tags</li>
+                <li><b>Universal Selector (*)</b> – selects all elements</li>
+                <li><b>Attribute Selector</b> – selects elements with specific attributes</li>
+
+
+            </ul>
+        </div>
+
+
+        <div class="box">
+            <h2>Selectors Example Output</h2>
+
+            <p>This is a normal paragraph styled using <b>element selector</b>.</p>
+
+            <p class="highlight">This paragraph uses a <b>class selector</b>.</p>
+
+            <p id="special">This paragraph uses an <b>ID selector</b>.</p>
+
+            <h3>Heading styled by Group Selector</h3>
+            <h4>Another heading styled by Group Selector</h4>
+
+            <input type="text" placeholder="Attribute Selector Example">
+
+
+
+        </div>
+
+    </div><br>
+    <br>
+    
+    <footer>
+        <p>© Tutorials, 2025</p>
+        <p>Designed By Koppisetti Sindhu.</p>
+    </footer>
+</body>
+
+</html>

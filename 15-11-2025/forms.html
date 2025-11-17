@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #f7d1d3, #c8b2d9);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #5a189a;
+        }
+
+        
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        
+        .box {
+            flex: 1;
+            background: #ffffff;
+            border: 3px solid #9d4edd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #7b2cbf;
+            border-bottom: 2px solid #c77dff;
+            padding-bottom: 5px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #5a189a;
+        }
+
+        input, select, textarea {
+            width: 95%;
+            padding: 8px;
+            margin-top: 6px;
+            margin-bottom: 12px;
+            border: 2px solid #c77dff;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #9d4edd;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #7b2cbf;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Forms in HTML</h1>
+
+    <div class="flex-container">
+
+    
+        <div class="box">
+            <h2>Explanation</h2>
+            <p>HTML forms are used to collect user input.  
+               They contain form controls like text boxes, radio buttons, checkboxes,
+               dropdowns and submit buttons.</p>
+
+            <p><b>Common Form Elements:</b></p>
+            <ul>
+                <li><b>form:</b> – wrapper for all input controls</li>
+                <li><b>input:</b> – text, email, password, radio, checkbox</li>
+                <li><b>select:</b> – dropdown list</li>
+                <li><b>textarea:</b> – multi-line input</li>
+                <li><b>button:</b> – submit button</li>
+            </ul>
+        </div>
+
+        
+        <div class="box">
+            <h2>Form Example</h2>
+
+            <form>
+                <label>Name:</label><br>
+                <input type="text" placeholder="Enter your name">
+
+                <label>Email:</label><br>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Gender:</label><br>
+                <input type="radio" name="gender"> Male  
+                <input type="radio" name="gender"> Female  
+                <br><br>
+
+                <label>Select Course:</label><br>
+                <select>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                </select>
+
+                <label>Address:</label>
+                <textarea rows="3" placeholder="Type your address"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+<footer>
+        <p>© Tutorials, 2025</p><br>
+        <p>Designed By Koppisetti Sindhu.</p>
+    </footer>
+</body>
+</html>
+
