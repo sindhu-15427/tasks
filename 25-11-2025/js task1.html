@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Even/Odd Background Changer</title>
+</head>
+
+<body>
+
+    <h2>Enter a Number</h2>
+
+    <input type="number" id="num" placeholder="Type a number">
+    <button onclick="changeBackground()">Check</button>
+
+    <script>
+        function changeBackground() {
+            let number = document.getElementById("num").value;
+
+            if (number % 2 === 0) {
+                document.body.style.background=" lightblue";
+                
+            } else {
+                document.body.style.background=" lightpink";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

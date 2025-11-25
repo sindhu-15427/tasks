@@ -8,11 +8,8 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgb(244, 240, 240);
+
 }
-
-
-
-
 header {
     top: 0;
     display: flex;
@@ -22,7 +19,8 @@ header {
     position: sticky;
     box-shadow: 0 6px 12px rgb(210, 210, 216);
     background-color: white;
-    line-height: 1.8;
+    line-height: 1.6;
+    font-size: 1.1rem;
 }
 
 #header {
