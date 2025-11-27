@@ -5,17 +5,54 @@
     <meta charset="UTF-8">
     <title>Even/Odd Background Changer</title>
 </head>
+<style>
+body {
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    background-color: rgb(239, 237, 168);
+}
+
+
+h2 {
+    font-size: 28px;
+    color: #b217d1;
+}
+input {
+    padding: 10px;
+    font-size: 18px;
+    width: 200px;
+    border: 2px solid #555;
+    border-radius: 6px;
+    margin-right: 10px;
+}   
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #48d660;
+}
+</style>
 
 <body>
 
+
     <h2>Enter a Number</h2>
 
-    <input type="number" id="num" placeholder="Type a number">
+    <input type="number" id="number" placeholder="Type a number">
     <button onclick="changeBackground()">Check</button>
 
     <script>
         function changeBackground() {
-            let number = document.getElementById("num").value;
+            let number = document.getElementById("number").value;
 
             if (number % 2 === 0) {
                 document.body.style.background=" lightblue";
