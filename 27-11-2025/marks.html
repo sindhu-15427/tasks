@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Details</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e8f0ff;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .main {
+            display: flex;
+            gap: 20px;
+        }
+
+
+        .input-box {
+            background: #ffe7cc;
+            padding: 20px;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #bbb;
+        }
+
+
+        .output-box {
+            background: #d6f5d6;
+            padding: 20px;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #bbb;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #888;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            background: #ff6600;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #cc5200;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+
+        <div class="input-box">
+            <h2>Student Marks</h2>
+
+            <input type="text" id="name" placeholder="Enter Student Name">
+
+            <input type="number" id="m1" placeholder="Subject 1 Marks">
+            <input type="number" id="m2" placeholder="Subject 2 Marks">
+            <input type="number" id="m3" placeholder="Subject 3 Marks">
+
+            <button onclick="calculate()">Calculate</button>
+        </div>
+
+
+        <div class="output-box">
+            <h2>Result</h2>
+
+            <div id="output">
+                <p style="color:gray;">Results will appear here...</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function calculate() {
+
+
+            let name = document.getElementById('name').value;
+            let a = Number(document.getElementById('m1').value);
+            let b = Number(document.getElementById('m2').value);
+            let c = Number(document.getElementById('m3').value);
+
+
+            let total = a + b + c;
+            let average = total / 3;
+
+
+            let grade = "";
+            if (average >= 90) grade = "A";
+            else if (average >= 75) grade = "B";
+            else if (average >= 50) grade = "C";
+            else grade = "Fail";
+
+
+            const student = {
+                name: name,
+                marks: [a, b, c],
+                total: total,
+                average: average.toFixed(2),
+                grade: grade
+            };
+
+
+            document.getElementById("output").innerHTML = `
+            <b>Name:</b> ${student.name} <br>
+            <b>Marks:</b> ${student.marks.join(", ")} <br>
+            <b>Total:</b> ${student.total} <br>
+            <b>Average:</b> ${student.average} <br>
+            <b>Grade:</b> ${student.grade}
+        `;
+        }
+    </script>
+
+</body>
+
+</html>
