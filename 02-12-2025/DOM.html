@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple DOM Manipulation</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 30px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 8px;
+            border: none;
+            background: #3498db;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background: #217dbb;
+            transform: scale(1.05);
+        }
+
+       
+        </style>
+
+</head>
+<body>
+
+<h2 id="title">Saisindhu</h2>
+<p id="para">Jhashwitha our Princess.</p>
+<p id="msg">This is our cute little family.</p>
+
+<button onclick="changeText()">Change Text</button>
+<button onclick="changeColor()">Change Color</button>
+<button onclick="hideText()">Hide Text</button>
+<button onclick="showText()">Show Text</button>
+
+<script>
+
+
+function changeText() {
+    document.getElementById("title").innerText = "Sindhu!";
+}
+
+
+function changeColor() {
+    document.getElementById("para").style.color = "red";
+}
+
+
+function hideText() {
+    document.getElementById("msg").style.display = "none";
+}
+
+
+function showText() {
+    document.getElementById("msg").style.display = "block";
+}
+
+</script>
+
+</body>
+</html>

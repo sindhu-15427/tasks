@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conditional Statements Example</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            color: blue;
+        }
+        .output {
+            background: #8cd5d4;
+            padding: 15px;
+            border-radius: 10px;
+            width: 350px;
+        }
+        p {
+            margin: 6px ;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Conditional Statements  </h2>
+
+<div class="output" id="result"></div>
+
+<script>
+
+    let result = document.getElementById("result");
+
+    let age = 20;
+    let isStudent = true;
+    let marks = 85;
+    let day = "Tuesday";
+
+    
+    function show(text) {
+        result.innerHTML += `<p>${text}</p>`;
+    }
+
+    
+    if (age >= 18) {
+        show("You are an adult.");
+    }
+
+
+    if (isStudent) {
+        show("You are a student.");
+    } else {
+        show("You are not a student.");
+    }
+
+    
+    if (marks >= 90) {
+        show("Grade: A");
+    } else if (marks >= 75) {
+        show("Grade: B");
+    } else if (marks >= 50) {
+        show("Grade: C");
+    } else {
+        show("Grade: Fail");
+    }
+
+    
+    if (age >= 18) {
+        if (isStudent) {
+            show("You are an adult student.");
+        } else {
+            show("You are an adult but not a student.");
+        }
+    }
+
+    
+    let canVote = (age >= 18) ? "Yes, eligible to vote" : "Not eligible to vote";
+    show(canVote);
+
+
+    if (age > 18 && marks > 80) {
+        show("Eligible for scholarship.");
+    }
+
+    if (age < 18 || isStudent) {
+        show("Special discount available.");
+    }
+
+    if (!isStudent) {
+        show("This will be shown only if not a student.");
+    }
+    switch (day) {
+        case "Monday":
+            show("Start of the week!");
+            break;
+
+        case "Tuesday":
+            show("It's Tuesday.");
+            break;
+
+        case "Wednesday":
+            show("Mid-week day.");
+            break;
+
+        default:
+            show("Other day.");
+    }
+
+</script>
+
+</body>
+</html>
