@@ -1,0 +1,187 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fa;
+}
+
+
+.navbar {
+    background: #0b0e3f;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #dbe3ff;
+    text-decoration: none;
+    font-size: 17px;
+    padding-bottom: 4px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #fff;
+    border-bottom: 2px solid #5a7bff;
+}
+
+
+.team-hero {
+    background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover no-repeat;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.team-hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+
+.team-section {
+    padding: 60px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #0b0e3f;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.team-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-7px);
+}
+
+.team-card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+.team-card h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #0b0e3f;
+}
+
+.role {
+    color: #5a7bff;
+    font-weight: 600;
+}
+
+.desc {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+}
+
+.socials i {
+    margin: 12px 6px;
+    color: #0b0e3f;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.socials i:hover {
+    color: #5a7bff;
+}
+
+
+.join-team {
+    text-align: center;
+    padding: 60px 8%;
+    background: linear-gradient(135deg, #e3e9ff, #f5f7ff);
+}
+
+.join-team h2 {
+    font-size: 30px;
+    color: #0b0e3f;
+}
+
+.join-team p {
+    margin: 12px 0 25px;
+    font-size: 16px;
+    color: #555;
+}
+
+.join-btn {
+    padding: 12px 25px;
+    background: #5a7bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.join-btn:hover {
+    background: #0b0e3f;
+}
+
+
+.footer {
+    background: #0b0e3f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-icons i {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #dbe3ff;
+    transition: 0.3s;
+}
+
+.footer-icons i:hover {
+    color: #fff;
+}

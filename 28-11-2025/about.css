@@ -1,0 +1,197 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e2f;
+    padding: 15px 30px;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: #ff9800;
+    border-radius: 5px;
+}
+
+
+.about-hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #1e1e2f, #2d2d44);
+    color: white;
+}
+
+.about-hero img {
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.mission-vision .box {
+    background-color: #fff;
+    flex: 1 1 300px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.mission-vision .box:hover {
+    transform: translateY(-10px);
+}
+
+
+.team-highlight {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.team-cards .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.team-cards .card:hover {
+    transform: translateY(-10px);
+}
+
+.team-cards img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.awards-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f0f5;
+}
+
+.awards-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    color: #1e1e2f;
+}
+
+.awards-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.award-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.award-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.award-card img {
+    width: 150px;
+    height: 150px;
+    
+    margin-bottom: 15px;
+}
+
+.award-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.award-card p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+.simple-footer {
+    background: linear-gradient(to right, #1a0033, #3b0066);
+    padding: 20px 40px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.simple-footer p {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+
+.footer-social i {
+    font-size: 1.3em;
+    margin-left: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.footer-social i:hover {
+    background: #ff9800;
+    color: #fff;
+    transform: translateY(-4px);
+    
+}
+
+
+   

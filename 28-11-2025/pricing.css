@@ -1,0 +1,195 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f3ff;
+}
+
+
+.navbar {
+    background: #1a0033;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #d8c4ff;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #ff9800;
+}
+.pricing-hero {
+    height: 45vh;
+    background: url('https://media.istockphoto.com/id/1300024626/photo/business-accounting-concept-business-man-using-calculator-with-computer-laptop-budget-and.jpg?s=2048x2048&w=is&k=20&c=VBgnpLijcgB894Yap4ikHRjPFMnBnYA4AkHZ4Z5IQ0s=')
+                center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.pricing-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45); 
+}
+
+.pricing-hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.pricing-hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: #00d4ff; 
+}
+
+.pricing-hero-content p {
+    font-size: 18px;
+    color: #e8e8e8;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 40px;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background: #fff;
+    width: 28%;
+    min-width: 260px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px #0000001e;
+}
+
+.plan-card img {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.plan-card h2 {
+    margin-bottom: 10px;
+}
+
+.plan-card .price {
+    font-size: 1.6rem;
+    color: #4a0099;
+    margin-bottom: 15px;
+}
+
+.plan-card ul {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.plan-card ul li {
+    margin-bottom: 10px;
+}
+
+.plan-card button {
+    padding: 12px 25px;
+    background: #4a0099;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+}
+
+
+.pricing-table-section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+table th {
+    background: #4a0099;
+    color: #fff;
+    padding: 12px;
+}
+
+table td {
+    background: #fff;
+    padding: 12px;
+    border: 1px solid #d5c4f7;
+}
+
+
+.graph-section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.graph-section img {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px #0000001d;
+}
+
+
+.simple-footer {
+    background: linear-gradient(to right, #1a0033, #3b0066);
+    padding: 20px 40px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social i {
+    font-size: 1.3em;
+    margin-left: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.footer-social i:hover {
+    background: #ff9800;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+
+

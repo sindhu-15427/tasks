@@ -42,7 +42,7 @@ body {
 }
 
 .logo span {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 700;
     color: #ffffff;
 
@@ -55,7 +55,7 @@ body {
     margin: 0 20px;
     color: #e8dcff;
 
-    font-size: 15px;
+    font-size: 18px;
     text-decoration: none;
     font-weight: 300;
     transition: 0.3s;
