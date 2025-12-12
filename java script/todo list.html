@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Compass To-Do UI</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .container {
+        width: 80%;
+        height: 85vh;
+        background: white;
+        border-radius: 15px;
+        display: flex;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+
+    
+    .sidebar {
+        width: 22%;
+        background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        padding: 30px;
+    }
+
+    .sidebar h2 {
+        margin-bottom: 25px;
+        opacity: 0.9;
+        font-weight: 400;
+    }
+
+    .sidebar p {
+        padding: 12px 0;
+        margin: 0;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: 0.3s;
+        font-size: 16px;
+    }
+
+    .sidebar p:hover {
+        opacity: 1;
+        padding-left: 10px;
+        color: #ffd166;
+    }
+
+    
+    .content {
+        width: 78%;
+        padding: 40px;
+        overflow-y: auto;
+    }
+
+    .date {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .small {
+        font-size: 14px;
+        color: #888;
+        margin-left: 5px;
+    }
+
+    h3 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    
+    .task-input {
+        background: #f3f3f3;
+        padding: 12px;
+        border-radius: 8px;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .task-input input {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        background: transparent;
+        font-size: 16px;
+        outline: none;
+    }
+
+    .task-input button {
+        background: #2d89ef;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        background: #fafaff;
+        padding: 12px;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btns button {
+        margin-left: 5px;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: white;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .edit { background: #f0ad4e; }
+    .delete { background: #d9534f; }
+
+    
+    .done-item {
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #444;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        background: #ffcc00;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+
+    <div class="sidebar">
+        <h2>Today</h2>
+        <p>Tomorrow</p>
+        <p>Weekly Report</p>
+        <p>Check Out</p>
+    </div>
+
+    
+    <div class="content">
+        <div class="date">12 <span class="small">December</span></div>
+
+        <h3>Today's Tasks:</h3>
+
+        <div class="task-input">
+            <input id="taskInput" placeholder="New task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <h3>Completed Tasks:</h3>
+        <div id="doneList"></div>
+    </div>
+
+</div>
+
+<script>
+    function addTask() {
+        let input = document.getElementById("taskInput");
+        let value = input.value.trim();
+        if (value === "") return;
+
+        let li = document.createElement("li");
+        li.innerHTML = `
+            <span onclick="markDone(this)">${value}</span>
+            <div class="btns">
+                <button class="edit" onclick="editTask(this)">Edit</button>
+                <button class="delete" onclick="deleteTask(this)">Delete</button>
+            </div>
+        `;
+        document.getElementById("taskList").appendChild(li);
+        input.value = "";
+    }
+
+    function deleteTask(btn) {
+        btn.parentElement.parentElement.remove();
+    }
+
+    function editTask(btn) {
+        let item = btn.parentElement.parentElement.querySelector("span");
+        let updated = prompt("Edit task:", item.innerText);
+        if (updated) item.innerText = updated;
+    }
+
+    function markDone(span) {
+        let text = span.innerText;
+
+        let div = document.createElement("div");
+        div.className = "done-item";
+        div.innerHTML = `<span class="dot"></span> ${text}`;
+
+        document.getElementById("doneList").appendChild(div);
+        span.parentElement.remove();
+    }
+</script>
+
+</body>
+</html>
