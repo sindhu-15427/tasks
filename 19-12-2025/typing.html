@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Typing Test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-body">
+
+<div class="home-container">
+    <h1>Check your typing skills</h1>
+
+
+    <div class="home-content">
+        <img src="type3.jpg" class="side-img">
+
+        <div class="home-box">
+            <select id="timeSelect">
+                <option value="5">5 Seconds</option>
+                <option value="10">10 Seconds</option>
+                <option value="60">1 Minute</option>
+            </select>
+
+            <button onclick="startTest()">START TEST</button>
+        </div>
+
+        <img src="type2.jpg" class="side-img">
+    </div>
+</div>
+
+<script>
+function startTest() {
+    const time = document.getElementById("timeSelect").value;
+    window.location.href = `test.html?time=${time}`;
+}
+</script>
+
+</body>
+</html>
