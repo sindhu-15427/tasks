@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Web Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Interactive Web Project</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Dynamic</a>
+            <a href="#">Timer</a>
+            <a href="#">Contact Form</a>
+        </nav>
+    </header>
+
+    <section class="container">
+
+
+        <div class="about">
+            <div class="about-text">
+                <h2>About This Project</h2>
+                <p>
+                    This is a sample interactive web page built using HTML and JavaScript.
+                    It features dynamic content manipulation, form validation, and local storage.
+                </p>
+
+                <h3>Features Demonstrated:</h3>
+                <ul>
+                    <li>DOM manipulation</li>
+                    <li>Form validation</li>
+                    <li>Event handling</li>
+                    <li>Dynamic content updates</li>
+                    <li>Local storage</li>
+                </ul>
+            </div>
+            <div class="about-map">
+                <iframe src="https://www.google.com/maps?q=Vijaya+Lakshmi+Enclave+Miyapur+Hyderabad&output=embed"
+                    loading="lazy">
+                </iframe>
+
+
+
+                <button onclick="toggleMap()">Toggle Map</button>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="grid">
+            <div class="todo">
+                <h2>Interactive To-Do List</h2>
+                <div class="todo-input">
+                    <input type="text" id="taskInput" placeholder="New Task...">
+                    <button onclick="addTask()">Add</button>
+                </div>
+
+                <ul id="taskList">
+                    <li>Learn HTML <button>Remove</button></li>
+                    <li>Practice JavaScript <button>Remove</button></li>
+                    <li>Store data in localStorage <button>Remove</button></li>
+                </ul>
+
+                <p class="note">Tasks are saved in your browser's local storage.</p>
+                <button class="clear">Clear All Tasks</button>
+            </div>
+
+            <div class="timer">
+                <h2>Auto-Updating Timer</h2>
+                <p>This counter auto-updates every second:</p>
+                <h3 id="time">Time elapsed: 00:00:00</h3>
+                <button onclick="pauseTimer()">Pause Timer</button>
+                <button onclick="resetTimer()">Reset Timer</button>
+            </div>
+        </div>
+
+
+        <div class="grid">
+            <div class="timer">
+                <h2>Auto-Updating Timer</h2>
+                <p>This counter auto-updates every second:</p>
+                <h3>Time elapsed: 00:00:08</h3>
+                <button>Pause Timer</button>
+                <button>Reset Timer</button>
+            </div>
+
+            <div class="contact">
+                <h2>Contact Form</h2>
+                <label>Name:</label>
+                <input type="text">
+                <small>Please enter your name.</small>
+
+                <label>Email:</label>
+                <input type="email">
+                <small>Please enter a valid email address.</small>
+
+                <label>Password:</label>
+                <input type="password">
+                <small>Password must be at least 6 characters long.</small>
+
+                <label>Message:</label>
+                <textarea></textarea>
+
+                <div class="checkbox">
+                    <label>Subscribe to newsletter?</label>
+                    <input type="checkbox"> Yes
+                    <input type="checkbox"> No
+                </div>
+
+                <div class="checkbox">
+                    <label>Preferred Contact:</label>
+                    <input type="checkbox"> Email
+                    <input type="checkbox"> Phone
+                </div>
+
+                <button>Clear Data</button>
+                <p class="success">Your information is saved in this browser!</p>
+            </div>
+        </div>
+        <div class="map-section">
+            <h2>Feat Hessions & Videos</h2>
+
+            <a href="https://www.google.com/maps/place/Vijaya+Lakshmi+Enclave,+Miyapur,+Hyderabad" target="_blank"
+                class="map-link">
+                <img src="map.png" alt="Office Location Map" class="map-image">
+            </a>
+
+            <p class="map-note">Click the map image to open office location</p>
+        </div>
+        <p class="map-note">Click on the map to view location</p>
+        </div>
+        <button onclick="toggleMap2()">Toggle Map</button>
+
+
+
+    </section>
+
+    <footer>
+        <p>© 2024 Interactive Web Project | Your email: sindhu15427@gmail.com</p>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
