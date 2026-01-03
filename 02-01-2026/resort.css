@@ -1,9 +1,9 @@
 body {
-    gap: 25px;
-    padding: 40px;
+    margin: 0;
+    font-family: Arial, sans-serif;
     background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') no-repeat center/cover;
-
 }
+
 nav a {
     color: white;
     margin: 15px;
@@ -12,9 +12,40 @@ nav a {
 }
 
 
+
+.resort-header {
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.resort-header h1 {
+    margin-bottom: 10px;
+}
+
+
+.resort-content {
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+.resort-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
 .resort-card {
     background: rgba(255, 255, 255, 0.95);
-    width: 300px;
+    width: 280px;
     border-radius: 15px;
     padding: 15px;
     text-align: center;
@@ -29,19 +60,9 @@ nav a {
 }
 
 
-.resort-card h2 {
-    margin: 10px 0;
-}
-
-
-.resort-card p {
-    font-size: 14px;
-}
-
-
 .price {
     font-size: 18px;
-    color: #e67e22;
+    color: #0984e3;
     font-weight: bold;
 }
 
@@ -53,9 +74,8 @@ button {
     color: white;
     border: none;
     border-radius: 6px;
-    cursor: pointer;
-}
 
+}
 
 button:hover {
     background: #0051a8;
