@@ -1,0 +1,1 @@
+function bookCar() { alert("Car rented successfully!"); }

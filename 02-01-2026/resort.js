@@ -1,0 +1,1 @@
+function bookResort() { alert("Resort booked successfully!"); }

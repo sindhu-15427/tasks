@@ -1,0 +1,41 @@
+body {
+    background: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1') center/cover;
+    font-family: Arial;
+}
+
+.register-box {
+    background: rgba(255, 255, 255, 0.9);
+    width: 350px;
+    margin: 80px auto;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+button {
+    background: #003580;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 95%;
+    cursor: pointer;
+}
+.back-home {
+  margin-top: 15px;
+}
+
+.back-home a {
+  text-decoration: none;
+  color: #003580;
+  font-weight: bold;
+}
+
+.back-home a:hover {
+  text-decoration: underline;
+}

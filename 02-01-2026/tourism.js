@@ -1,0 +1,1 @@
+console.log("Tourism page ready");

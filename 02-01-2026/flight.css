@@ -1,0 +1,73 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05') no-repeat center/cover;
+}
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.flight-content {
+background: rgba(255,255,255,0.9);
+max-width: 900px;
+margin: 30px auto;
+padding: 20px;
+border-radius: 12px;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+}
+
+
+.flights-container {
+display: flex;
+justify-content: center;
+gap: 25px;
+padding: 40px;
+flex-wrap: wrap;
+}
+
+
+.flight-card {
+background: rgba(255,255,255,0.95);
+width: 260px;
+border-radius: 15px;
+padding: 15px;
+text-align: center;
+}
+
+
+.price {
+font-size: 18px;
+color: #d63031;
+font-weight: bold;
+}
+
+
+button {
+margin-top: 10px;
+padding: 10px 15px;
+background: #003580;
+color: white;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+}
+
+
+button:hover {
+background: #0051a8;
+}
+
+
+.back-home {
+display: block;
+text-align: center;
+color: white;
+font-weight: bold;
+margin-bottom: 20px;
+text-decoration: none;
+}
